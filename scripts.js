@@ -1,3 +1,8 @@
+function mostrarTexto() {
+    const textoNorma = document.getElementById('textoNorma');
+    textoNorma.style.display = textoNorma.style.display === 'none' ? 'block' : 'none';
+}
+
 function calcularInsalubridade() {
     const salarioBase = parseFloat(document.getElementById('salarioBase').value);
     const grauInsalubridade = parseFloat(document.getElementById('grauInsalubridade').value);
@@ -35,3 +40,4 @@ function calcularRuido() {
         resultadoElemento.className = 'resultado erro';
     }
 }
+
